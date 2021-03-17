@@ -752,7 +752,8 @@ class DAController(SwitchController):
             'Opponent': self.current_run.opponent,
             'Win percentage': win_percent,
             'Time per run': time_per_run,
-            'Shinies found': self.shinies_found
+            'Shinies found': self.shinies_found,
+            'Consecutive resets': self.consecutive_resets
         }.items():
             self.info[key] = value
 
