@@ -777,10 +777,13 @@ class DAController(SwitchController):
         the_dict = {
             "Boss": self.boss,
             "Wins/Runs": f"{self.wins}/{self.runs}",
+            "Win Percentage": win_percent,
+            "Time Per Run": time_per_run,
             "Base Balls": self.base_balls,
             "Legendary Balls": self.legendary_balls,
             "Dynite Ore": self.dynite_ore,
-        }
+            "Consecutive Resets": self.consecutive_resets   
+            }
 
         if self.shinies_found > 0:
             the_dict["Shinies Found"] = self.shinies_found
